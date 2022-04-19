@@ -12,16 +12,17 @@ public class Auto extends Caracteristicas {
     private int anio;
     private int kilometraje;
     private String color;
-
+    private int TipoMotor; /*Campo para identificar tipo de motor para el carro: 1-Combustión, 2-Eléctrico*/
 
 public Auto(){
 
 }
 
-    public Auto(int anio, int kilometraje, String color) {
+    public Auto(int anio, int kilometraje, String color, int tipoMotor) {
         this.anio = anio;
         this.kilometraje = kilometraje;
         this.color = color;
+        this.TipoMotor = tipoMotor;
     }
 
     public int getAnio() {
@@ -48,6 +49,14 @@ public Auto(){
         this.color = color;
     }
 
+    public int getTipoMotor() {
+        return TipoMotor;
+    }
+
+    public void setTipoMotor(int tipoMotor) {
+        this.TipoMotor = tipoMotor;
+    }
+    
 public void  imprimirDatos(){
 JOptionPane.showMessageDialog(null,"La marca es: "+getMarca()
 +"\n El modelo es: "+getModelo()
