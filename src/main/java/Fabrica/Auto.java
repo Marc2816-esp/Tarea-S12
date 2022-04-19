@@ -63,6 +63,7 @@ JOptionPane.showMessageDialog(null,"La marca es: "+getMarca()
 +"\n El año es: "+anio
 +"\n El kilometraje es: "+kilometraje+ " KM"
 +"\n El color es: "+color);
++"\n El tipo de motor es: "+TipoMotor
 }
 
 
@@ -78,6 +79,7 @@ for (i=1; i<=limite; i++){
   carro.setModelo(JOptionPane.showInputDialog("Ingrese el modelo del auto: "));
   carro.setColor(JOptionPane.showInputDialog("Ingrese el color del auto: "));
   carro.setAnio(Integer.parseInt(JOptionPane.showInputDialog("Ingrese el año del auto: ")));
+  carro.TipoMotor(Integer.parseInt(JOptionPane.showInputDialog("Ingrese el tipo de motor del auto, 1 para combustión o 2 para eléctrico: ")));
   carro.imprimirDatos();
 }
 }
